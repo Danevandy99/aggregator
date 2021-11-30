@@ -110,7 +110,7 @@ process.argv.forEach((val, index, array) => {
 });
 
 //Get the database and table info
-var config = ini.parse(fs.readFileSync('/path/to/config/global.conf', 'utf-8'));
+var config = ini.parse(fs.readFileSync('../aggrivate/global.conf', 'utf-8'));
 
 //console.log(config.database);
 loggit(3, "DEBUG: It's party time!");

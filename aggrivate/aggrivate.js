@@ -108,11 +108,11 @@ var query = 'SELECT ' +
     'contenthash,' +
     'pullnow ' +
     'FROM ' + config.tables.cg_table_newsfeeds + ' ' +
-    'WHERE (newest_item_pubdate > ' + twoweeksago + ' OR pullnow = 1) ' +
-    'AND errors < 100 ' +
+    //'WHERE (newest_item_pubdate > ' + twoweeksago + ' OR pullnow = 1) ' +
+    'WHERE errors < 100 ' +
     'AND parse_errors < 100 ' +
     'AND dead=0 ' +
-    'AND updated=0 ' +
+    'AND updated = 0 ' +
     'ORDER by pullnow DESC, lastcheck ASC ' +
     'LIMIT ' + maxRowsToReturn;
 // if (checkall && checkdead) {

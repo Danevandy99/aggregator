@@ -3,3 +3,11 @@ build
 npm-debug.log
 .env
 .DS_Store
+
+aggrivate/feeds/**/*
+aggrivate/logs/db.log
+aggrivate/db.log
+.gitignore
+partytime/package-lock.json
+partytime/logs/db.log
+podcasts.csv
